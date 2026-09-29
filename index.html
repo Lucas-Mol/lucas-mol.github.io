@@ -1,121 +1,284 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página Pessoal para Desenvolvedor Web, Lucas Mol.">
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <link rel="icon" type="imagem/png" href="./images/main-icon.png"/>
-    <title>Lucas Mol</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lucas Mol — Senior Software Engineer</title>
+<meta name="description" content="Lucas Mol — Senior Software Engineer focused on backend, distributed systems and software architecture. Java, Spring Boot, Go, Kafka, AWS. Open to remote (US/CA time zones) and relocation.">
+<meta name="theme-color" content="#0D1117">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lucas Mol — Senior Software Engineer">
+<meta property="og:description" content="Backend, distributed systems and software architecture. Java, Spring Boot, Go, Kafka, AWS.">
+<meta property="og:url" content="https://lucas-mol.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://lucas-mol.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230D1117'/%3E%3Crect x='5' y='5' width='54' height='54' rx='11' fill='none' stroke='%23F5A524' stroke-width='3'/%3E%3Ctext x='32' y='41' font-family='monospace' font-size='24' font-weight='700' fill='%23F5A524' text-anchor='middle'%3ELM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Lucas Mol",
+  "jobTitle": "Senior Software Engineer",
+  "url": "https://lucas-mol.github.io/",
+  "email": "mailto:lucasmolpro@outlook.com",
+  "address": { "@type": "PostalAddress", "addressCountry": "BR" },
+  "sameAs": ["https://www.linkedin.com/in/lucasmolpro/", "https://github.com/Lucas-Mol"],
+  "knowsAbout": ["Java", "Spring Boot", "Go", "Kafka", "AWS", "Microservices", "Software Architecture", "Distributed Systems"]
+}
+</script>
 </head>
 <body>
-    <header class="header__container">
-        <div class="header__wrapper">
-            <div class="header__content">
-                <div class="logo">
-                    <a href="#section__home" data-menu-top="0">
-                        <p class="logo__lucas">Lucas</p>
-                        <p class="logo__mol">Mol</p>
-                    </a>
-                </div>
-                <nav class="header__nav">
-                    <ul>
-                        <li ><a href="#section__skills" data-menu-top="317.2">Habilidades</a></li>
-                        <li ><a href="#section__contacts" data-menu-top="635">Contato</a></li>
-                    </ul>
-                    <a href="https://github.com/Lucas-Mol" target="_blank"><img class="header__nav-logos" src="./images/github-icon-90.png" alt="Github"></a>
-                    <a href="https://www.linkedin.com/in/lucasmolpro/" target="_blank"><img class="header__nav-logos" src="./images/linkedin-icon-100.png" alt="LinkedIn"></a>
-                </nav>  
-            </div>
-        </div>
-        <div class="header__bottom-line"></div>
-    </header>
-    <main class="main" data-0="left: 0%;" data-635="left: -200%;">
-        <section id="section__home" class="section__home">
-            <div class="geometric__shapes">
-                <div class="line-one"></div>
-                <div class="line-two"></div>
-                <div class="ellipse-one"></div>
-                <div class="ellipse-two"></div>
-                <p class="binary-code-text">01001000<br>01101100<br>01101111</p>
-            </div>
-            <div class="main__wrapper">
-                <div class="main__container-text">
-                    <p id="mainText"></p>
-                </div>
-            </div>
-        </section>
-        <section id="section__skills" class="section__skills">
-            <div class="geometric__shapes">
-                <div class="trapeze-box"><img class="trapeze"src="./images/trapeze.png"></div>
-                <div class="line-one"></div>
-                <p class="binary-code-text">01100101<br>01101100<br>00100001</p>
-            </div>
-            <div class="main__wrapper">
-                <div class="main__container-text">
-                    <h2 id="skillText" class="skills-title"></h2>
-                    <p>Sou um Desenvolvedor Full Stack Junior, entusiasta da tecnologia e
-                        em busca por mais <strong>Conhecimento</strong> & <strong>Experiências</strong>.
-                    </p>
-                    <p>Confira algumas das tecnologias que utilizo:</p>
-                    <div class="skills__box">
-                        <ul>
-                            <li><img id="icon-html" src="./images/html-icon-90.png" alt="HTML 5"></li>
-                            <li><img id="icon-css" src="./images/css-icon-90.png" alt="CSS 3"></li>
-                            <li><img id="icon-js" src="./images/js-icon-90.png" alt="JavaScript"></li>
-                            <li><img id="icon-java" src="./images/java-icon-90.png" alt="Java"></li>
-                            <li><img id="icon-git" src="./images/git-icon-90.png" alt="Git"></li>
-                            <li><img id="icon-cpp" src="./images/cpp-icon-90.png" alt="C++"></li>
-                            <li><img id="icon-clojure" src="./images/clojure-icon-90.png" alt="Clojure"></li>
-                            <li><img id="icon-db" src="./images/db-icon-100.png" alt="Banco de Dados"></li>
-                            <li><img id="icon-nodejs" src="./images/nodejs-icon-90.png" alt="Node.js"></li>
-                            <li><img id="icon-scrum" src="./images/scrum-icon-90.png" alt="Scrum & Metodologias Ágeis"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="profile-demo__box">
-                    <img class="profile-photo" src="./images/profile-photo.png">
-                    <div id="demo-box" class="demo__box">
-                        <h3 id="demo-title">Saiba mais</h3>
-                        <p id="demo-description">Deslize sobre os ícones e descubra mais.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="section__contact" class="section__contact">
-            <div class="main__wrapper">
-                <div class="main__container-text">
-                    <h2>Contato</h2> 
-                    <p>Gostou do meu trabalho?</p>
-                    <p>Entre em contato<br>comigo.</p>  
-                </div>
-                <form class="form__container">
-                    <fieldset>
-                        <label for="name-input">Nome</label>
-                        <input id="name-input" type="text" required="true">
-                        <label for="email-input">E-mail</label>
-                        <input id="email-input" type="email" required="true">
-                        <textarea id="message-textarea" placeholder="Escreva sua mensagem..." required="true"></textarea>
-                        <button id="submitButton" type="submit"><strong>Enviar</strong></button>
-                    </fieldset>
-                </form>
-            </div>
-        </section>
-    </main>
-    <section class="section__mobile">
-        <div class="main__wrapper">
-            <div class="main__container-text">
-                <h2>Me Desculpe :(</h2> 
-                <p>O portfólio ainda não foi adaptado para dispositivos móveis.</p> 
-            </div>
-        </div>
-    </section>
-    <script type="text/javascript" src="./scripts/skrollr.js"></script>
-    <script type="text/javascript">
-        var s = skrollr.init();
+<a class="skip-link" href="#hello" data-i18n="nav.skip">Skip to content</a>
 
-        skrollr.menu.init(s)
-    </script>
-    <script type="text/javascript" src="./scripts/script.js"></script>
+<header class="site-header">
+  <a class="logo" href="#hello" data-scene="0" aria-label="Lucas Mol">
+    <span class="logo-mark">LM</span>
+    <span class="logo-name">Lucas Mol</span>
+  </a>
+
+  <nav class="scene-nav" id="scene-nav" aria-label="Sections">
+    <a href="#hello" data-scene="0"><span class="n">01</span><span data-i18n="nav.hello">Hello</span></a>
+    <a href="#about" data-scene="1"><span class="n">02</span><span data-i18n="nav.about">About</span></a>
+    <a href="#architecture" data-scene="2"><span class="n">03</span><span data-i18n="nav.arch">Architecture</span></a>
+    <a href="#journey" data-scene="3"><span class="n">04</span><span data-i18n="nav.journey">Journey</span></a>
+    <a href="#stack" data-scene="4"><span class="n">05</span><span data-i18n="nav.stack">Stack &amp; Labs</span></a>
+    <a href="#contact" data-scene="5"><span class="n">06</span><span data-i18n="nav.contact">Contact</span></a>
+    <a class="nav-cv" href="assets/Lucas_Mol_Senior_Software_Engineer_Resume.pdf" download data-i18n="nav.cv">Download CV</a>
+  </nav>
+
+  <div class="header-actions">
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+    </div>
+    <a class="btn btn-accent btn-sm header-cv" href="assets/Lucas_Mol_Senior_Software_Engineer_Resume.pdf" download>
+      <span data-i18n="nav.cv">Download CV</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v9M4 7l4 4 4-4M2 14h12"/></svg>
+    </a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="scene-nav" data-i18n-aria="nav.menu" aria-label="Open menu">
+      <svg width="20" height="14" viewBox="0 0 20 14" aria-hidden="true"><path d="M0 1h20M0 7h20M0 13h20"/></svg>
+    </button>
+  </div>
+
+  <div class="progress" aria-hidden="true"><div class="progress-fill"></div></div>
+</header>
+
+<main class="hwrap" id="hwrap">
+  <div class="sticky">
+    <div class="track" id="track">
+
+      <!-- 01 HELLO -->
+      <section class="scene" id="hello" data-index="0" aria-labelledby="hello-title">
+        <div class="bin layer" data-speed="0.2" aria-hidden="true"></div>
+        <div class="stage stage-hello">
+          <svg class="trapeze layer" data-speed="0.5" viewBox="0 0 620 520" aria-hidden="true">
+            <polygon class="trap-line" points="120,40 520,40 600,480 40,480"/>
+            <polygon class="trap-fill" points="170,90 470,90 530,430 110,430"/>
+          </svg>
+          <div class="hero-copy">
+            <p class="binary-hello">01001000 01100101 01101100 01101100 01101111 00100001 → <span data-i18n="hello.hello">Hello!</span></p>
+            <h1 id="hello-title" class="hero-name">Lucas<br>Mol</h1>
+            <p class="hero-role">Senior Software Engineer <span class="muted" data-i18n="hello.roleSub">· Backend &amp; Distributed Systems</span></p>
+            <p class="hero-intro" data-i18n="hello.intro">I design and modernize backend systems for mission-critical, high-traffic platforms — resilient microservices, asynchronous flows and architecture that holds up under real load.</p>
+            <p class="pill"><span class="dot"></span><span data-i18n="hello.open">Open to remote (US/CA time zones) &amp; relocation</span></p>
+            <div class="hero-ctas">
+              <a class="btn btn-accent" href="#contact" data-scene="5"><span data-i18n="hello.talk">Get in touch</span><svg width="28" height="12" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg></a>
+              <a class="btn btn-ghost" href="assets/Lucas_Mol_Senior_Software_Engineer_Resume.pdf" download><span data-i18n="nav.cv">Download CV</span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v9M4 7l4 4 4-4M2 14h12"/></svg></a>
+            </div>
+          </div>
+          <div class="req-card" aria-label="Profile summary as an API response">
+            <div class="req-head"><span><b>GET</b> /api/lucas-mol</span><span class="ok">200 OK</span></div>
+            <pre class="req-body"><code>{
+  <i>"role"</i>: <s>"Senior Software Engineer"</s>,
+  <i>"focus"</i>: <s>["backend", "distributed systems"]</s>,
+  <i>"stack"</i>: <s>["Java", "Spring Boot", "Go", "Kafka", "AWS"]</s>,
+  <i>"experience"</i>: <s>"7+ years"</s>,
+  <i>"location"</i>: <s>"Brazil"</s>,
+  <i>"open_to"</i>: <s>["remote", "relocation"]</s>
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 ABOUT -->
+      <section class="scene" id="about" data-index="1" aria-labelledby="about-title">
+        <div class="bin bin-left layer" data-speed="0.2" aria-hidden="true"></div>
+        <div class="stage stage-about">
+          <div class="photo-wrap">
+            <div class="photo-soft layer" data-speed="0.5" aria-hidden="true"></div>
+            <div class="photo">
+              <span class="photo-fallback" aria-hidden="true">LM</span>
+              <img src="assets/img/profile.jpg" alt="Lucas Mol" data-i18n-alt="about.photoAlt" width="440" height="540" onerror="this.remove()">
+            </div>
+            <p class="place" data-i18n="about.place">Brazil</p>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow"><span>02</span> — <span data-i18n="about.eyebrow">About</span></p>
+            <h2 id="about-title" class="h2" data-i18n="about.h2">I build backends that hold up when it matters.</h2>
+            <p class="lead" data-i18n="about.p1">Senior Software Engineer with 7+ years designing and modernizing backend systems in Java and Go — from 24/7 multi-tenant microservices to legacy migrations. I care about architecture that survives real traffic: asynchronous flows, resilience patterns and observability by default.</p>
+            <p class="note" data-i18n="about.p2">Currently pursuing an MBA in Software Architecture and going deeper into AppSec &amp; DevSecOps.</p>
+            <ul class="metrics">
+              <li><strong>7+</strong><span data-i18n="about.m1">years building and modernizing software</span></li>
+              <li><strong class="t" data-i18n="about.f2t">Distributed systems</strong><span data-i18n="about.f2">multi-tenant microservices running 24/7</span></li>
+              <li><strong class="t" data-i18n="about.f3t">Architecture</strong><span data-i18n="about.f3">DDD, event-driven design and legacy modernization</span></li>
+              <li><strong class="t" data-i18n="about.f4t">Resilience</strong><span data-i18n="about.f4">timeouts, rollbacks and observability by default</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 ARCHITECTURE -->
+      <section class="scene" id="architecture" data-index="2" aria-labelledby="arch-title">
+        <div class="bin bin-low layer" data-speed="0.2" aria-hidden="true"></div>
+        <div class="stage stage-arch">
+          <div class="arch-title">
+            <p class="eyebrow"><span>03</span> — <span data-i18n="arch.eyebrow">Architecture</span></p>
+            <h2 id="arch-title" class="h2" data-i18n="arch.h2">Architectures I work with.</h2>
+            <p class="sub" data-i18n="arch.sub">Pick one to watch a request — and its response — travel through it.</p>
+          </div>
+          <div class="arch-grid" id="arch-grid"></div>
+        </div>
+      </section>
+
+      <!-- 04 JOURNEY -->
+      <section class="scene" id="journey" data-index="3" aria-labelledby="journey-title">
+        <div class="bin bin-left-low layer" data-speed="0.2" aria-hidden="true"></div>
+        <div class="stage stage-journey">
+          <div class="journey-head">
+            <p class="eyebrow"><span>04</span> — <span data-i18n="journey.eyebrow">Journey</span></p>
+            <h2 id="journey-title" class="h2" data-i18n="journey.h2">Every stop added a layer.</h2>
+            <p class="hint-sm" data-i18n="journey.hint">Select a station to open it</p>
+          </div>
+          <div class="metro" id="metro">
+            <div class="metro-line" aria-hidden="true"></div>
+            <div class="metro-fill" aria-hidden="true"></div>
+            <div class="metro-train" aria-hidden="true">REQ</div>
+          </div>
+          <article class="station-detail" id="station-detail" aria-live="polite"></article>
+          <ol class="journey-list" id="journey-list"></ol>
+        </div>
+      </section>
+
+      <!-- 05 STACK & LABS -->
+      <section class="scene" id="stack" data-index="4" aria-labelledby="stack-title">
+        <div class="bin bin-far layer" data-speed="0.2" aria-hidden="true"></div>
+        <div class="stage stage-stack">
+          <div class="stack-col">
+            <p class="eyebrow"><span>05</span> — <span data-i18n="stack.eyebrow">Stack &amp; Labs</span></p>
+            <h2 id="stack-title" class="h2" data-i18n="stack.h2">Some tools I work with.</h2>
+            <div class="groups">
+              <div class="group"><h3 data-i18n="stack.g1">Languages</h3><ul class="chips"><li>Java</li><li>Go</li><li>TypeScript</li><li>Python</li></ul></div>
+              <div class="group"><h3>Backend</h3><ul class="chips"><li>Spring Boot</li><li>Hibernate</li><li>Java EE</li><li>Node.js</li><li>NestJS</li><li>Express</li><li>Prisma</li></ul></div>
+              <div class="group"><h3 data-i18n="stack.g3">Data &amp; Messaging</h3><ul class="chips"><li>PostgreSQL</li><li>MongoDB</li><li>Redis</li><li>SQL Server</li><li>Kafka</li><li>RabbitMQ</li></ul></div>
+              <div class="group"><h3>Cloud &amp; DevOps</h3><ul class="chips"><li>AWS</li><li>Docker</li><li>Kubernetes</li><li>Helm</li><li>Terraform</li><li>Jenkins</li><li>ArgoCD</li></ul></div>
+              <div class="group"><h3 data-i18n="stack.g5">Observability</h3><ul class="chips"><li>Datadog</li><li>Splunk</li><li>Grafana</li></ul></div>
+            </div>
+          </div>
+          <div class="labs-col">
+            <h3 class="labs-label">Labs</h3>
+            
+            <div class="lab-list">
+              <article class="lab">
+                <h4 data-i18n="stack.site">This portfolio</h4>
+                <p data-i18n="stack.siteD">Plain HTML, CSS and JavaScript — horizontal parallax, bilingual content, no frameworks.</p>
+                <a href="https://github.com/Lucas-Mol/lucas-mol.github.io" class="lab-link"><span data-i18n="stack.repo">View repo</span><svg width="28" height="12" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg></a>
+              </article>
+              <article class="lab">
+                <h4>GitHub</h4>
+                <p data-i18n="stack.ghD">Public repositories, experiments and study projects.</p>
+                <a href="https://github.com/Lucas-Mol" class="lab-link"><span data-i18n="stack.profile">View profile</span><svg width="28" height="12" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg></a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 CONTACT -->
+      <section class="scene" id="contact" data-index="5" aria-labelledby="contact-title">
+        <div class="bin bin-left-far layer" data-speed="0.2" aria-hidden="true"></div>
+        <div class="stage stage-contact">
+          <div class="contact-col">
+            <p class="eyebrow"><span>06</span> — <span data-i18n="contact.eyebrow">Contact</span></p>
+            <h2 id="contact-title" class="h2-xl" data-i18n="contact.h2">Let's talk.</h2>
+            <p class="lead" data-i18n="contact.sub">Open to remote roles and relocation, working in your team's time zone.</p>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="row2">
+                <label><span data-i18n="contact.name">Name</span><input type="text" name="name" autocomplete="name" required></label>
+                <label><span data-i18n="contact.email">Email</span><input type="email" name="email" autocomplete="email" required></label>
+              </div>
+              <label><span data-i18n="contact.msg">Message</span><textarea name="message" rows="4" required data-i18n-ph="contact.msgPh" placeholder="Tell me about the role or project"></textarea></label>
+              <div class="form-foot">
+                <button type="submit" class="btn btn-accent"><span data-i18n="contact.send">Send message</span><svg width="28" height="12" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg></button>
+                <p class="form-status" id="form-status" role="status"></p>
+              </div>
+            </form>
+          </div>
+          <div class="contact-side">
+            <div class="tz-card">
+              <div class="tz-head">
+                <h3 data-i18n="contact.tzTitle">Working on your team's hours</h3>
+                <p data-i18n="contact.tzSub">I adapt my schedule to the company's time zone — North America or Europe.</p>
+              </div>
+              <ul class="clocks">
+                <li><span class="z"><span class="z-name">Vancouver · San Francisco</span><span class="z-sub" data-i18n="contact.zPacific">Pacific</span></span><b data-tz="America/Los_Angeles">--:--</b></li>
+                <li><span class="z"><span class="z-name">Toronto · New York</span><span class="z-sub" data-i18n="contact.zEastern">Eastern</span></span><b data-tz="America/Toronto">--:--</b></li>
+                <li><span class="z"><span class="z-name">Amsterdam · Warsaw</span><span class="z-sub" data-i18n="contact.zCentral">Central Europe</span></span><b data-tz="Europe/Amsterdam">--:--</b></li>
+                <li class="me"><span class="z"><span class="z-name" data-i18n="contact.zMe">Me — Brazil</span><span class="z-sub" data-i18n="contact.zMeSub">Brasília time</span></span><b data-tz="America/Sao_Paulo">--:--</b></li>
+              </ul>
+              <p class="tz-note" data-i18n="contact.tzNote">Live local times.</p>
+            </div>
+            <div class="links">
+              <a href="https://www.linkedin.com/in/lucasmolpro/">LinkedIn<svg width="28" height="12" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg></a>
+              <a href="https://github.com/Lucas-Mol">GitHub<svg width="28" height="12" viewBox="0 0 28 12" aria-hidden="true"><path d="M0 6h26M21 1l5 5-5 5"/></svg></a>
+              <a href="mailto:lucasmolpro@outlook.com">lucasmolpro@outlook.com</a>
+              <a href="assets/Lucas_Mol_Senior_Software_Engineer_Resume.pdf" download><span data-i18n="nav.cv">Download CV</span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v9M4 7l4 4 4-4M2 14h12"/></svg></a>
+            </div>
+          </div>
+          <p class="copyright">© <span id="year">2026</span> Lucas Mol</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<dialog class="sim" id="sim" aria-labelledby="sim-title">
+  <div class="sim-head">
+    <div class="sim-heading">
+      <p class="eyebrow" id="sim-count">01 / 06</p>
+      <h3 id="sim-title" class="sim-title"></h3>
+      <p id="sim-desc" class="sim-desc"></p>
+    </div>
+    <button type="button" class="sim-close" id="sim-close" data-i18n-aria="sim.close" aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 2l14 14M16 2L2 16"/></svg>
+    </button>
+  </div>
+  <div class="sim-canvas"><svg id="sim-svg" viewBox="0 0 1200 440" role="img" aria-labelledby="sim-title sim-desc"></svg></div>
+  <div class="sim-bar">
+    <div class="sim-legend">
+      <span><i class="lg lg-req"></i><span data-i18n="sim.req">Request</span></span>
+      <span><i class="lg lg-res"></i><span data-i18n="sim.res">Response</span></span>
+      <span class="lg-note" data-i18n="sim.internal">Smaller dots are internal calls</span>
+    </div>
+    <div class="sim-nav">
+      <button type="button" class="btn btn-ghost btn-sm" id="sim-prev" data-i18n="sim.prev">Previous</button>
+      <button type="button" class="btn btn-ghost btn-sm" id="sim-next" data-i18n="sim.next">Next</button>
+    </div>
+  </div>
+  <h4 class="sim-steps-title" data-i18n="sim.how">How it flows</h4>
+  <ol class="sim-steps" id="sim-steps"></ol>
+</dialog>
+
+<div class="scroll-hint" aria-hidden="true">
+  <span><span data-i18n="hint">Scroll to follow the request</span><svg width="28" height="12" viewBox="0 0 28 12"><path d="M0 6h26M21 1l5 5-5 5"/></svg></span>
+  <span class="counter" id="counter">01 / 06</span>
+</div>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
