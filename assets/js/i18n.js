@@ -16,12 +16,12 @@ window.I18N = {
     "hint": "Scroll to follow the request",
     "hello.hello": "Hello!",
     "hello.roleSub": "· Backend & Distributed Systems",
-    "hello.intro": "I design and modernize backend systems for mission-critical, high-traffic platforms — resilient microservices, asynchronous flows and architecture that holds up under real load.",
+    "hello.intro": "I design and modernize backend systems for mission-critical, high-traffic platforms com resilient microservices, asynchronous flows and architecture that holds up under high load.",
     "hello.open": "Open to remote (US/CA time zones) & relocation",
     "hello.talk": "Get in touch",
     "about.eyebrow": "About",
-    "about.h2": "I build backends that hold up when it matters.",
-    "about.p1": "Senior Software Engineer with 7+ years designing and modernizing backend systems in Java and Go — from 24/7 multi-tenant microservices to legacy migrations. I care about architecture that survives real traffic: asynchronous flows, resilience patterns and observability by default.",
+    "about.h2": "Architecture designed for critical systems.",
+    "about.p1": "Senior Software Engineer with 7+ years experience designing and modernizing backend systems in Java and Go, since from 24/7 multi-tenant microservices to legacy migrations. Focused on architecture that holds up under high traffic: asynchronous flows, resilience patterns and observability built in from start.",
     "about.p2": "Currently pursuing an MBA in Software Architecture and going deeper into AppSec & DevSecOps.",
     "about.photoAlt": "Portrait of Lucas Mol",
     "about.place": "Brazil",
@@ -35,7 +35,7 @@ window.I18N = {
     "stack.g3": "Data & Messaging",
     "stack.g5": "Observability",
     "stack.site": "This portfolio",
-    "stack.siteD": "Plain HTML, CSS and JavaScript — horizontal parallax, bilingual content, no frameworks.",
+    "stack.siteD": "Plain HTML, CSS and JavaScript (Vanilla) with horizontal parallax and bilingual content.",
     "stack.repo": "View repo",
     "stack.ghD": "Public repositories, experiments and study projects.",
     "stack.profile": "View profile",
@@ -128,8 +128,8 @@ window.I18N = {
     "about.f4t": "Resilience",
     "about.f4": "timeouts, rollbacks and observability by default",
     "arch.eyebrow": "Architecture",
-    "arch.h2": "Architectures I work with.",
-    "arch.sub": "Pick one to watch a request — and its response — travel through it.",
+    "arch.h2": "Some patterns I work with...",
+    "arch.sub": "Pick one to watch the flow in different patterns.",
     "arch.cta": "Watch simulation",
     "sim.req": "Request",
     "sim.res": "Response",
@@ -139,7 +139,7 @@ window.I18N = {
     "sim.close": "Close",
     "sim.how": "How it flows",
     "contact.tzTitle": "Working on your team's hours",
-    "contact.tzSub": "I adapt my schedule to the company's time zone — North America or Europe.",
+    "contact.tzSub": "I adapt my schedule to the company's time zone: North America or Europe.",
     "contact.zPacific": "Pacific",
     "contact.zEastern": "Eastern",
     "contact.zCentral": "Central Europe",
@@ -216,7 +216,7 @@ window.I18N = {
         "steps": [
           "The client sends the request.",
           "The API validates it and publishes an event.",
-          "The client gets an acknowledgement right away — no waiting on slow dependencies.",
+          "The client gets an acknowledgement right away no waiting on slow dependencies.",
           "A worker consumes the event and calls the external provider.",
           "The result is stored; the client is notified or checks the status later."
         ]
@@ -257,7 +257,7 @@ window.I18N = {
         "steps": [
           "The request enters through an inbound adapter.",
           "The adapter calls a use case through an inbound port.",
-          "Domain rules decide — with no infrastructure code involved.",
+          "Domain rules decide with no infrastructure code involved.",
           "An outbound port persists the result through an adapter.",
           "The response returns through the same ports."
         ]
@@ -373,7 +373,7 @@ window.I18N = {
           "Application A redirects to the identity provider to log in.",
           "The provider returns a signed token.",
           "Application A calls an API with the token; the API validates it.",
-          "Application B reuses the same session — no second login."
+          "Application B reuses the same session without a second login."
         ]
       }
     }
@@ -394,12 +394,12 @@ window.I18N = {
     "hint": "Role para seguir a requisição",
     "hello.hello": "Olá!",
     "hello.roleSub": "· Backend & Sistemas Distribuídos",
-    "hello.intro": "Projeto e modernizo sistemas backend para plataformas críticas e de alto tráfego — microsserviços resilientes, fluxos assíncronos e arquitetura que aguenta carga real.",
+    "hello.intro": "Projetando e modernizando sistemas backend para plataformas críticas e de alto tráfego com microsserviços resilientes, fluxos assíncronos e arquitetura que aguenta alta carga.",
     "hello.open": "Aberto a remoto (fusos EUA/Canadá) e relocação",
     "hello.talk": "Fale comigo",
     "about.eyebrow": "Sobre",
-    "about.h2": "Construo backends que se sustentam quando mais importa.",
-    "about.p1": "Senior Software Engineer com mais de 7 anos projetando e modernizando sistemas backend em Java e Go — de microsserviços multi-tenant 24/7 a migrações de legado. Me importo com arquitetura que sobrevive a tráfego real: fluxos assíncronos, padrões de resiliência e observabilidade desde o início.",
+    "about.h2": "Arquitetura pensada para sistemas críticos.",
+    "about.p1": "Engenheiro de Software Sênior com mais de 7 anos de experiência projetando e modernizando sistemas backend em Java e Go, desde microsserviços multi-tenant 24/7 a migrações de legado. Foco em arquiteturas construídas para suportar alto tráfego: fluxos assíncronos, padrões de resiliência e observabilidade desde o início.",
     "about.p2": "Cursando MBA em Arquitetura de Software e me aprofundando em AppSec & DevSecOps.",
     "about.photoAlt": "Retrato de Lucas Mol",
     "about.place": "Brasil",
@@ -413,7 +413,7 @@ window.I18N = {
     "stack.g3": "Dados & Mensageria",
     "stack.g5": "Observabilidade",
     "stack.site": "Este portfólio",
-    "stack.siteD": "HTML, CSS e JavaScript puros — parallax horizontal, conteúdo bilíngue, sem frameworks.",
+    "stack.siteD": "HTML, CSS e JavaScript puros (Vanilla) com parallax horizontal e conteúdo bilíngue.",
     "stack.repo": "Ver repositório",
     "stack.ghD": "Repositórios públicos, experimentos e projetos de estudo.",
     "stack.profile": "Ver perfil",
@@ -506,8 +506,8 @@ window.I18N = {
     "about.f4t": "Resiliência",
     "about.f4": "timeouts, rollbacks e observabilidade desde o início",
     "arch.eyebrow": "Arquitetura",
-    "arch.h2": "Arquiteturas com que trabalho.",
-    "arch.sub": "Escolha uma para ver a requisição — e a resposta — percorrendo o sistema.",
+    "arch.h2": "Alguns dos padrões que utilizo...",
+    "arch.sub": "Selecione para ver o fluxo em diferentes padrões.",
     "arch.cta": "Ver simulação",
     "sim.req": "Requisição",
     "sim.res": "Resposta",
@@ -517,7 +517,7 @@ window.I18N = {
     "sim.close": "Fechar",
     "sim.how": "Como flui",
     "contact.tzTitle": "No horário do seu time",
-    "contact.tzSub": "Adapto minha rotina ao fuso da empresa — América do Norte ou Europa.",
+    "contact.tzSub": "Adapto minha rotina ao fuso da empresa: América do Norte ou Europa.",
     "contact.zPacific": "Pacífico",
     "contact.zEastern": "Leste",
     "contact.zCentral": "Europa Central",
@@ -594,7 +594,7 @@ window.I18N = {
         "steps": [
           "O cliente envia a requisição.",
           "A API valida e publica um evento.",
-          "O cliente recebe a confirmação na hora — sem esperar dependências lentas.",
+          "O cliente recebe a confirmação na hora sem esperar dependências lentas.",
           "Um worker consome o evento e chama o provedor externo.",
           "O resultado é salvo; o cliente é notificado ou consulta o status depois."
         ]
@@ -635,7 +635,7 @@ window.I18N = {
         "steps": [
           "A requisição entra por um adapter de entrada.",
           "O adapter chama um caso de uso por uma porta de entrada.",
-          "As regras de domínio decidem — sem código de infraestrutura envolvido.",
+          "As regras de domínio decidem sem código de infraestrutura envolvido.",
           "Uma porta de saída persiste o resultado por meio de um adapter.",
           "A resposta volta pelas mesmas portas."
         ]
@@ -751,7 +751,7 @@ window.I18N = {
           "A Aplicação A redireciona para o provedor de identidade para o login.",
           "O provedor devolve um token assinado.",
           "A Aplicação A chama uma API com o token; a API o valida.",
-          "A Aplicação B reaproveita a mesma sessão — sem segundo login."
+          "A Aplicação B reaproveita a mesma sessão sem segundo login."
         ]
       }
     }
