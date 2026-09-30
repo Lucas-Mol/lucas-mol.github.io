@@ -82,7 +82,7 @@
     if (state.horizontal) {
       var y = window.scrollY - hwrap.offsetTop;
       var p = Math.min(1, Math.max(0, y / maxScrollY()));
-      var x = p * maxTrackX();
+      var x = Math.round(p * maxTrackX());
       track.style.transform = "translate3d(" + (-x) + "px,0,0)";
 
       layers.forEach(function (el) {
@@ -91,7 +91,7 @@
         var sceneX = scene.offsetLeft - x;
         var shift = (speed - 1) * sceneX;
         if (el.closest(".stage")) shift = shift / state.scale;
-        el.style.transform = "translate3d(" + shift.toFixed(1) + "px,0,0)";
+        el.style.transform = "translate(" + Math.round(shift) + "px,0)";
       });
 
       active = Math.round(x / state.vw);
@@ -103,7 +103,7 @@
       layers.forEach(function (el) {
         if (el.classList.contains("bin")) {
           var top = el.closest(".scene").getBoundingClientRect().top;
-          el.style.transform = "translate3d(0," + (-0.25 * top).toFixed(1) + "px,0)";
+          el.style.transform = "translate(0," + Math.round(-0.25 * top) + "px)";
         } else {
           el.style.transform = "";
         }
