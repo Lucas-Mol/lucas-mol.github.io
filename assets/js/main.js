@@ -5,6 +5,7 @@
   var STAGE_W = 1440, STAGE_H = 900;
   var H_QUERY = window.matchMedia("(min-width: 901px) and (min-height: 561px)");
   var STATION_X = [144, 490, 836, 1182]; // station centers inside .metro (desktop stage px)
+  var CV_FILES = { en: "assets/Lucas_Mol_Resume_EN.pdf", pt: "assets/Lucas_Mol_Curriculo_PT.pdf" };
 
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
@@ -202,6 +203,7 @@
     $$("[data-i18n-aria]").forEach(function (el) { el.setAttribute("aria-label", t(el.getAttribute("data-i18n-aria"))); });
     $$("[data-i18n-alt]").forEach(function (el) { el.setAttribute("alt", t(el.getAttribute("data-i18n-alt"))); });
     $$(".lang-toggle button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
+    $$("[data-cv]").forEach(function (el) { el.setAttribute("href", CV_FILES[lang]); });
 
     renderArchGrid();
     if (sim.open) buildSim();
